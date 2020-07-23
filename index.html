@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sơ Yếu Lý Lịch</title>
+<link rel="stylesheet" href="layout.css">
+<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	#wrapper{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	#header{
+		float: left;
+		width: 300px;
+		height: 250px;
+		background-color: #FF9966;
+	}
+	#right{
+		float: right;
+		width: 700px;
+		height: auto;
+		background-color: white;
+	}
+	#left{
+		float: left;
+		width: 300px;
+		height: 900px;
+		background-color: #141823;
+	}
+	#center{
+		float: left;
+		width: 10px;
+		height: auto;
+		background-color: white;
+	}
+	#center1{
+		border: 1px #FF9966;
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #FF9966;
+		border-radius: 50%;
+	}
+	#center2{
+		border: 1px #FF9966;
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #FF9966;
+		border-radius: 50%;
+	}
+	#center3{
+		border: 1px #FF9966;
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #FF9966;
+		border-radius: 50%;
+	}
+	#center4{
+		border: 1px #FF9966;
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #FF9966;
+		border-radius: 50%;
+	}
+	#center5{
+		border: 1px #FF9966;
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #FF9966;
+		border-radius: 50%;
+	}
+	#center6{
+		border: 1px #FF9966;
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #FF9966;
+		border-radius: 50%;
+	}
+	#center7{
+		border: 1px #FF9966;
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #FF9966;
+		border-radius: 50%;
+	}
+	#center8{
+		border: 1px #FF9966;
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #FF9966;
+		border-radius: 50%;
+	}
+	#center9{
+		border: 1px #FF9966;
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #FF9966;
+		border-radius: 50%;
+	}
+</style>
+<script type="text/javascript">
+function time() {
+   var today = new Date();
+   var weekday=new Array(7);
+   weekday[0]="Chủ nhật";
+   weekday[1]="Thứ hai";
+   weekday[2]="Thứ ba";
+   weekday[3]="Thứ tư";
+   weekday[4]="Thứ năm";
+   weekday[5]="Thứ sáu";
+   weekday[6]="Thứ bảy";
+   var day = weekday[today.getDay()];
+   var dd = today.getDate();
+   var mm = today.getMonth()+1; //January is 0!
+   var yyyy = today.getFullYear();
+   var h=today.getHours();
+   var m=today.getMinutes();
+   var s=today.getSeconds();
+   m=checkTime(m);
+   s=checkTime(s);
+   nowTime = h+":"+m+":"+s;
+   if(dd<10){dd='0'+dd} if(mm<10){mm='0'+mm} today = day+', '+ dd+'/'+mm+'/'+yyyy;
+   tmp='<span class="date">'+today+' | '+nowTime+'</span>';
+   document.getElementById("clock").innerHTML=tmp;
+
+   clocktime=setTimeout("time()","1000","JavaScript");
+   function checkTime(i)
+   {
+      if(i<10){
+     i="0" + i;
+      }
+      return i;
+   }
+}
+</script>
+</head>
+<body onload="time()">
+<div id="wrapper">
+	<div id="header" align="center"><br>
+			<img src="avt.jpg" width="150px"
+		height="200px"/>
+	</div>
+	<div id="clock"></div>
+	<div id="right"><h1><br><p>&nbsp;&nbsp;&nbsp;SƠ YẾU LÝ LỊCH</p></h1><br>
+		<a><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Họ tên:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phan Thị Khả Vi</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Ngày sinh:</b>&nbsp;&nbsp;11/11/1997</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Giới tính:</b>&nbsp;&nbsp;&nbsp;&nbsp;Nữ</p><br>
+			<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;Trình độ học vấn</p></h2>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đại học chính quy</p>
+		</a>
+		<h1><p>&nbsp;&nbsp;&nbsp;--------------------------</p></h1>
+		
+		<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;MỤC TIÊU NGHỀ NGHIỆP</p></h2><br>
+		<div id="center"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+	<div id="center1" align="center" style="color:#FFFFFF"><h3><br>2020</h3></div><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hiện tại, tôi chưa có nhiều kinh nghiệm làm việc. Nhưng tôi mong muốn</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trở thành một lập trình viên chuyên nghiệp. Tôi sẽ tự rèn luyện bản thân để</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hoàn thành tốt những công việc được giao.</p><br><br>
+		<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;QUÁ TRÌNH HỌC TẬP</p></h2><br>
+		<div id="center2" align="center" style="color:#FFFFFF"><h3><br>2015</h3></div>
+		<p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Đại học Cần Thơ</b></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Chuyên ngành: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Khoa học máy tính</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Tốt nghiệp loại: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trung bình</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Điểm trung bình: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.37/4.0</p><br><br>
+			<div id="center3" align="center" style="color:#FFFFFF"><h3><br>2017</h3></div>
+		<h4><p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ngôn ngữ PHP</p></h4>	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Xây dựng Website bán quần áo.</p><br><br>
+			<div id="center4" align="center" style="color:#FFFFFF"><h3><br>2018</h3></div>
+		<h4><p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ngôn ngữ PYTHON</p></h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nhận diện biển báo giao thông bằng OpenCV.</p><br><br>
+			<div id="center5" align="center" style="color:#FFFFFF"><h3><br>2019</h3></div>
+		<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRUNG TÂM TRUYỀN HÌNH VIỆT NAM TẠI T.P CẦN THƠ</p></h4>
+		<h4>
+			<p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thực tập sinh</p></h4>
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Xây dựng hệ thống nhận dạng tôm trên băng truyền.</p><br><br>
+		<div id="center6" align="center" style="color:#FFFFFF"><h3><br>2020</h3></div>
+		<h4><p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ngôn ngữ PYTHON</p></h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nhận diện hoạt động của con người bằng mạng Notron hồi quy.</p><br><br>
+			<div id="center7" align="center" style="color:#FFFFFF"><h3><br>2020</h3></div>
+		<h4><p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ngôn ngữ JAVA</p></h4>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Xây dựng ứng dụng điểm danh sinh viên trên thiết bị di động.</p><br><br>
+		<h2><p>&nbsp;&nbsp;&nbsp;&nbsp;KINH NGHIỆM LÀM VIỆC</p></h2><br>
+		<div id="center8" align="center" style="color:#FFFFFF"><h3><br>2016</h3></div>
+		<h4><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HỌC VIỆN STEM</p></h4>
+		<h4><p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Giáo viên tin học</p><br></h4><br>
+		<div id="center9" align="center" style="color:#FFFFFF"><h3><br>2018</h3></div>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dạy Scratch cho học sinh tiểu học: từ lớp 1- lớp 5.</p><br>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dạy Robot cho học sinh tiểu học: từ lớp 1- lớp 5.</p><br><br>
+	</div>
+	<div id="left"><h4><br><br><p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GIỚI THIỆU BẢN THÂN</p><br></h4>
+		<a><p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tôi là Vi, là một người có tính tình</p>
+			<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hòa đồng, vui vẻ. Với khả năng giao</p>
+			<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tiếp tốt trước đám đông, nên tôi tự tin</p>
+			<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rằng mình sẽ hoàn thành hết tất cả các</p>
+			<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hoạt động nhóm được giao.</p>
+			<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ngoài ra, tôi hiện đang trao dồi thêm</p>
+			<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;các kỹ năng lập trình cần thiết và</p>
+			<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chứng chỉ anh văn.</p>
+		</a>
+		<br>
+		<h4><br><p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIÊN HỆ</p><br></h4>
+		<a><p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="1.png" width="25px" height="20px" />&nbsp;&nbsp;&nbsp;0912 209 050</p><br></a>
+		<a><p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="2.png" width="25px" height="20px" />&nbsp;&nbsp;&nbsp;ptkvi97@gmail.com</p><br></a>
+		<a><p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="3.png" width="25px" height="20px" />&nbsp;&nbsp;&nbsp;395 Nguyễn Văn Cừ, An Khánh, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ninh Kiều, T.p Cần Thơ</p></a>
+		<br>
+		<h4><br><p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KỸ NĂNG</p><br></h4>
+		<a><p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Ngôn ngữ lập trình</b></p>
+		<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHP/HTML/CSS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="4.png" width="55px" height="15px"/></p>
+		<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C/C++ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="4.png" width="55px" height="15px"/></p>
+		<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="5.png" width="55px" height="15px"/></p>
+		<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="6.png" width="55px" height="15px"/></p></a>
+		<h4><br><p style="color:#FF9966">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SỞ THÍCH</p><br></h4>
+		<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nghe nhạc, xem phim.</p>
+		<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tham gia các hoạt động ngoài trời.</p>
+		<p style="color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đi du lịch.</p>
+	</div>
+</div>
+</body>
+</html>
